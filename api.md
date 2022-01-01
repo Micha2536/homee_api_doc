@@ -1,5 +1,11 @@
 # Befehlsübersicht homee API
 
+## Abruf aller Daten vom homee
+
+``` 
+Get:all
+```
+
 ## User
 
 ### User anlegen
@@ -186,6 +192,7 @@ get:update   => Request Warning
 ### Settings
 ```
 PUT:settings/extensions/weather?enabled=0   // oder 1 (Wetter aktivieren oder deaktivieren)
+PUT:settings/extensions/apple_homekit?enabled=0
 PUT:settings?beta=0                         // 0 = Stable, 1 = Beta, 2 = Alpha
 PUT:settings?wlan_ssid=000&password=000     // Wlan und Password neu vergeben
 PUT:settings?webhooks_key=0                 // Webhookkey refresh
