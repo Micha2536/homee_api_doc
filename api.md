@@ -1,8 +1,30 @@
 # Befehlsübersicht homee API
 
+## User
+
+### User anlegen
+```
+POST:users?username=Maxi&forename=Max&surename=Mustermann&password=1234567890&role=1 // Role 1 = Service , 2 = Admin , 3 = Standard , 4 = Limited
+```
+
+### User löschen
+```
+DELETE:users/00 // 00 ist die ID des Users
+```
+
+### User bearbeiten
+```
+PUT:users/0?username=ABC&password=1234567890
+```
+
+### User abfragen
+```
+GET:users 
+```
+
 ## Geräte
 
-## Value setzen
+### Value setzen
 ```
 PUT:nodes/000/attributes/000?target_value=1
 ```
@@ -45,6 +67,11 @@ GET:nodes/000/attributes/000/history?from=1617911952&till=1617998352  // (1 Tag)
 ### Expertenmodus Zwave
 ```
 PUT:nodes/000?configure=1&parameter=00&byte_size=0&value=0
+```
+
+### Profil bei Zwavegeräten setzen die kein Profil haben
+```
+PUT:nodes/000?profile=000
 ```
 
 ## Homeegramme
@@ -160,6 +187,9 @@ get:update   => Request Warning
 ```
 PUT:settings/extensions/weather?enabled=0   // oder 1 (Wetter aktivieren oder deaktivieren)
 PUT:settings?beta=0                         // 0 = Stable, 1 = Beta, 2 = Alpha
+PUT:settings?wlan_ssid=000&password=000     // Wlan und Password neu vergeben
+PUT:settings?webhooks_key=0                 // Webhookkey refresh
+PUT:settings?time=1641065153579
 
 ```
 
