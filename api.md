@@ -75,7 +75,7 @@ GET:nodes/000/attributes/000/history?from=1617911952&till=1617998352  // (1 Tag)
 PUT:nodes/000?configure=1&parameter=00&byte_size=0&value=0
 ```
 
-### Profil bei Zwavegeräten setzen die kein Profil haben
+### Profil bei Zwave Geräten setzen die kein Profil zugewiesen bekommen haben
 ```
 PUT:nodes/000?profile=000
 ```
