@@ -159,7 +159,8 @@ get:update   => Request Warning
 ### Settings
 ```
 PUT:settings/extensions/weather?enabled=0   // oder 1 (Wetter aktivieren oder deaktivieren)
-PUT:settings?beta=0                         // oder 1 (Beta aktivieren oder deaktivieren)
+PUT:settings?beta=0                         // 0 = Stable, 1 = Beta, 2 = Alpha
+
 ```
 
 ### Tagebuch abfragen
