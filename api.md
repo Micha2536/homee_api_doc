@@ -146,6 +146,11 @@ GET:restrictions/nodes/000
 put:settings?restart_homee=1
 ```
 
+### homee runterfahren
+```
+put:settings?shutdown_homee=1
+```
+
 ### Prüfen auf Update
 ```
 get:update   => Request Warning
