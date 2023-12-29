@@ -28,7 +28,11 @@ PUT:users/0?username=ABC&password=1234567890
 GET:users 
 ```
 
-## Geräte
+## Geräte löschen
+```
+DELETE:users/" + user_id + "/devices/" + device_id
+```
+
 
 ### Value setzen
 ```
@@ -38,6 +42,10 @@ PUT:nodes/000/attributes/000?target_value=1
 alternativ ohne Angabe der Node-ID
 ```
 PUT:nodes/0/attributes?ids=000&target_value=0   // hier muss die 0 bei nodes stehen bleiben
+```
+### Geräte neu abfragen
+```
+PUT:nodes/" + id + "?refresh_node=1
 ```
 
 ### Anlernmodus starten
